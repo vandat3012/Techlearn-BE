@@ -14,6 +14,7 @@ public class CorsConfig {
         CorsConfiguration corsConfiguration = new CorsConfiguration();
         corsConfiguration.addAllowedOriginPattern("http://localhost:8080");
         corsConfiguration.addAllowedOriginPattern("http://localhost:8081");
+        corsConfiguration.addAllowedOriginPattern("http://192.168.0.112:8080");
         corsConfiguration.addAllowedMethod("*");
         corsConfiguration.addAllowedHeader("*");
         corsConfiguration.setAllowCredentials(true);

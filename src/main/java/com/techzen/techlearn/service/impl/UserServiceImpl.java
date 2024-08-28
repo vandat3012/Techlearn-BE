@@ -43,30 +43,23 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserResponseDTO updateUser(UUID id, UserRequestDTO request) {
-        UserEntity user = userRepository.findById(id).map(existingUser -> {
-            var user1 = userMapper.toUserEntity(request);
-            existingUser.setFullName(user1.getFullName());
-            existingUser.setAge(user1.getAge());
-            return userRepository.save(existingUser);
-        }).orElseThrow(() -> new AppException(ErrorCode.USER_NOT_FOUND));
-        return userMapper.toUserResponseDTO(user);
+        userRepository.findById(id).orElseThrow(() -> new AppException(ErrorCode.USER_NOT_FOUND));
+        var userMap = userMapper.toUserEntity(request);
+        userMap.setId(id);
+        return userMapper.toUserResponseDTO(userRepository.save(userMap));
     }
 
     @Override
     public void deleteUser(UUID id) {
         var user = userRepository.findById(id).orElseThrow(() -> new AppException(ErrorCode.USER_NOT_FOUND));
-        user.setIsDeleted(false);
+        user.setIsDeleted(true);
         userRepository.save(user);
     }
 
     @Override
     public PageResponse<?> getAllUser(int page, int pageSize) {
-        int pageNo = 0;
-        if (page > 0) {
-            pageNo = page - 1;
-        }
 
-        Pageable pageable = PageRequest.of(pageNo, pageSize);
+        Pageable pageable = PageRequest.of(page > 0 ? page - 1 : 0, pageSize);
         Page<UserResponseDTO> users = userRepository.findAllUser(pageable);
 
         return PageResponse.builder()

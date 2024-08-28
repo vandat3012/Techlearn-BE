@@ -12,7 +12,7 @@ import lombok.experimental.FieldDefaults;
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class UserRequestDTO {
-    @NotBlank(message = "full name not blank")
+    @NotBlank(message = "FULL_NAME_INVALID")
     String fullName;
     @NotBlank(message = "age not blank")
     String age;
