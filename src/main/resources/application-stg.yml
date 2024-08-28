@@ -1,0 +1,17 @@
+server:
+  port: 8182
+spring:
+  config:
+    activate:
+      on-profile: stg
+  datasource:
+    url: jdbc:mysql://localhost:3306/techlearn
+    username: TrucPham
+    password: 12345
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true

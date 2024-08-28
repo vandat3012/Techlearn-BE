@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: @spring.profiles.active@
+
+logging:
+  file:
+    name: app.log
+    path: /path/to/logs
+  level:
+    root: INFO                    # Mức độ logging toàn cục INFO, WARN, ERROR bỏ qua DEBUG, TRACE
+    org.springframework.web: DEBUG  # Mức độ logging cho một package cụ thể
