@@ -8,3 +8,7 @@ spring:
     url: jdbc:mysql://localhost:3306/techlearn
     username: TrucPham
     password: 12345
+  flyway:
+    locations: classpath:/db/migration
+    baseline-on-migrate: true
+    baseline-version: 0

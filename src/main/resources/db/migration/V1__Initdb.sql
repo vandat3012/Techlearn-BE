@@ -1,11 +1,12 @@
-create table tbl_user
+CREATE TABLE tbl_user
 (
-    id            BINARY(16) primary key,
-    full_name     varchar(200),
-    age           INT,
-    modified_by   VARCHAR(200),
-    modified_date DATETIME,
-    created_date  DATETIME,
-    created_by    VARCHAR(200),
-    is_deleted    TINYINT(1) DEFAULT 0
+    id            BINARY(16)   NOT NULL,
+    created_by    VARCHAR(255) NULL,
+    created_date  datetime     NULL,
+    modified_date datetime     NULL,
+    modified_by   VARCHAR(255) NULL,
+    full_name     VARCHAR(255) NULL,
+    age           INT          NULL,
+    is_deleted    BIT(1)       NULL,
+    CONSTRAINT pk_tbl_user PRIMARY KEY (id)
 );
