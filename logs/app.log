@@ -905,3 +905,67 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'techlearn'
 2024-08-29 10:49:05.768 [http-nio-8181-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing [com.techzen.techlearn.dto.response.ResponseData@3e6c169]
 2024-08-29 10:49:05.769 [http-nio-8181-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
 2024-08-29 11:20:44.398 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29 11:39:41.304 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-29 11:39:41.351 [main] INFO  com.techzen.techlearn.TechlearnApplication - Starting TechlearnApplication using Java 17.0.11 with PID 9736 (D:\SourceCode\Techzen\techlearn\target\classes started by Trúc Ph?m in D:\SourceCode\Techzen\techlearn)
+2024-08-29 11:39:41.358 [main] INFO  com.techzen.techlearn.TechlearnApplication - The following 1 profile is active: "dev"
+2024-08-29 11:39:42.013 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29 11:39:42.077 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interface.
+2024-08-29 11:39:42.620 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8181 (http)
+2024-08-29 11:39:42.631 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2024-08-29 11:39:42.634 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-29 11:39:42.634 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29 11:39:42.686 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-29 11:39:42.687 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1281 ms
+2024-08-29 11:39:42.733 [main] DEBUG org.springframework.web.filter.CorsFilter - Filter 'corsFilter' configured for use
+2024-08-29 11:39:43.293 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/techlearn (MySQL 8.3)
+2024-08-29 11:39:43.312 [main] WARN  org.flywaydb.core.internal.database.base.Database - Flyway upgrade recommended: MySQL 8.3 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2024-08-29 11:39:43.353 [main] INFO  org.flywaydb.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.029s)
+2024-08-29 11:39:43.369 [main] INFO  org.flywaydb.core.internal.command.DbMigrate - Current version of schema `techlearn`: 0
+2024-08-29 11:39:43.374 [main] INFO  org.flywaydb.core.internal.command.DbMigrate - Schema `techlearn` is up to date. No migration necessary.
+2024-08-29 11:39:43.439 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29 11:39:43.498 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29 11:39:43.538 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-29 11:39:43.829 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29 11:39:44.742 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29 11:39:44.803 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29 11:39:45.025 [main] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-08-29 11:39:45.445 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29 11:39:45.513 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+2024-08-29 11:39:45.571 [main] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-29 11:39:45.604 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-29 11:39:45.638 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-29 11:39:45.768 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2024-08-29 11:39:45.784 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8181 (http) with context path '/'
+2024-08-29 11:39:45.792 [main] INFO  com.techzen.techlearn.TechlearnApplication - Started TechlearnApplication in 4.89 seconds (process running for 6.611)
+2024-08-29 11:40:56.514 [http-nio-8181-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29 11:40:56.514 [http-nio-8181-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-29 11:40:56.514 [http-nio-8181-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-08-29 11:40:56.514 [http-nio-8181-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-08-29 11:40:56.514 [http-nio-8181-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-08-29 11:40:56.514 [http-nio-8181-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@67d90687
+2024-08-29 11:40:56.514 [http-nio-8181-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@2d1ef2fc
+2024-08-29 11:40:56.514 [http-nio-8181-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-29 11:40:56.514 [http-nio-8181-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-08-29 11:40:56.530 [http-nio-8181-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/api/v1/users", parameters={}
+2024-08-29 11:40:56.558 [http-nio-8181-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.techzen.techlearn.controller.UserController#addUser(UserRequestDTO)
+2024-08-29 11:40:56.580 [http-nio-8181-exec-1] DEBUG org.springframework.web.method.HandlerMethod - Could not resolve parameter [0] in public com.techzen.techlearn.dto.response.ResponseData<?> com.techzen.techlearn.controller.UserController.addUser(com.techzen.techlearn.dto.request.UserRequestDTO): Content-Type 'text/plain;charset=UTF-8' is not supported
+2024-08-29 11:40:56.580 [http-nio-8181-exec-1] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain;charset=UTF-8' is not supported]
+2024-08-29 11:40:56.580 [http-nio-8181-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 415 UNSUPPORTED_MEDIA_TYPE
+2024-08-29 11:40:56.597 [http-nio-8181-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+2024-08-29 11:40:56.597 [http-nio-8181-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-08-29 11:40:56.613 [http-nio-8181-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-29 11:40:56.614 [http-nio-8181-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Thu Aug 29 11:40:56 ICT 2024, status=415, error=Unsupported Media Type, path=/api/v1/user (truncated)...]
+2024-08-29 11:40:56.630 [http-nio-8181-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 415
+2024-08-29 11:41:32.365 [http-nio-8181-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/api/v1/users", parameters={}
+2024-08-29 11:41:32.365 [http-nio-8181-exec-3] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.techzen.techlearn.controller.UserController#addUser(UserRequestDTO)
+2024-08-29 11:41:32.379 [http-nio-8181-exec-3] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.techzen.techlearn.dto.request.UserRequestDTO@46cc6bed]
+2024-08-29 11:41:32.603 [http-nio-8181-exec-3] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-29 11:41:32.603 [http-nio-8181-exec-3] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing [com.techzen.techlearn.dto.response.ResponseData@5564ef6]
+2024-08-29 11:41:32.611 [http-nio-8181-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-08-29 11:42:56.356 [http-nio-8181-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - PUT "/api/v1/users/9ef71ea1-316d-4c76-a89c-2adf251561ae", parameters={}
+2024-08-29 11:42:56.356 [http-nio-8181-exec-6] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.techzen.techlearn.controller.UserController#updateUser(UUID, UserRequestDTO)
+2024-08-29 11:42:56.358 [http-nio-8181-exec-6] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.techzen.techlearn.dto.request.UserRequestDTO@314b1307]
+2024-08-29 11:44:43.265 [http-nio-8181-exec-6] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-29 11:44:43.265 [http-nio-8181-exec-6] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing [com.techzen.techlearn.dto.response.ResponseData@4b4045ba]
+2024-08-29 11:44:43.265 [http-nio-8181-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-08-29 11:44:43.502 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'

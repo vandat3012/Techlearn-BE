@@ -53,7 +53,7 @@ public class UserController {
                 .build();
     }
 
-    @PatchMapping("/{id}")
+    @PutMapping("/{id}")
     public ResponseData<?> updateUser(@PathVariable UUID id, @RequestBody UserRequestDTO request) {
         return ResponseData.builder()
                 .status(HttpStatus.OK.value())
