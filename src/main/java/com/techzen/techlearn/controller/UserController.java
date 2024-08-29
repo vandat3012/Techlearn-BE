@@ -53,8 +53,8 @@ public class UserController {
                 .build();
     }
 
-    @PatchMapping
-    public ResponseData<?> updateUser(@RequestParam UUID id, @RequestBody UserRequestDTO request) {
+    @PatchMapping("/{id}")
+    public ResponseData<?> updateUser(@PathVariable UUID id, @RequestBody UserRequestDTO request) {
         return ResponseData.builder()
                 .status(HttpStatus.OK.value())
                 .code(ErrorCode.UPDATE_SUCCESSFUL.getCode())
