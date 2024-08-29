@@ -23,7 +23,7 @@ public class ResponseData<T> {
     @Builder.Default
     Integer code = 1000;
     String message;
-    T data;
+    T result;
     Date timestamp;
     String path;
     String error;

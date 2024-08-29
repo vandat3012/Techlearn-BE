@@ -46,6 +46,7 @@ public class UserServiceImpl implements UserService {
         userRepository.findById(id).orElseThrow(() -> new AppException(ErrorCode.USER_NOT_FOUND));
         var userMap = userMapper.toUserEntity(request);
         userMap.setId(id);
+        userMap.setIsDeleted(false);
         return userMapper.toUserResponseDTO(userRepository.save(userMap));
     }
 
