@@ -969,3 +969,29 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'techlearn'
 2024-08-29 11:44:43.265 [http-nio-8181-exec-6] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing [com.techzen.techlearn.dto.response.ResponseData@4b4045ba]
 2024-08-29 11:44:43.265 [http-nio-8181-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
 2024-08-29 11:44:43.502 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29 19:42:09.183 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-29 19:42:09.217 [main] INFO  com.techzen.techlearn.TechlearnApplicationTests - Starting TechlearnApplicationTests using Java 17.0.11 with PID 25256 (started by Trúc Ph?m in D:\SourceCode\Techzen\techlearn)
+2024-08-29 19:42:09.217 [main] INFO  com.techzen.techlearn.TechlearnApplicationTests - The following 1 profile is active: "dev"
+2024-08-29 19:42:09.256 [main] DEBUG org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@288cdaab
+2024-08-29 19:42:10.003 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29 19:42:10.085 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interface.
+2024-08-29 19:42:11.303 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/techlearn (MySQL 8.3)
+2024-08-29 19:42:11.323 [main] WARN  org.flywaydb.core.internal.database.base.Database - Flyway upgrade recommended: MySQL 8.3 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2024-08-29 19:42:11.453 [main] INFO  org.flywaydb.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.087s)
+2024-08-29 19:42:11.481 [main] INFO  org.flywaydb.core.internal.command.DbMigrate - Current version of schema `techlearn`: 0
+2024-08-29 19:42:11.483 [main] INFO  org.flywaydb.core.internal.command.DbMigrate - Schema `techlearn` is up to date. No migration necessary.
+2024-08-29 19:42:11.593 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29 19:42:11.663 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29 19:42:11.718 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-29 19:42:12.193 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29 19:42:13.197 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29 19:42:13.276 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29 19:42:13.563 [main] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-08-29 19:42:14.333 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29 19:42:14.443 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+2024-08-29 19:42:14.595 [main] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-29 19:42:14.637 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-29 19:42:14.688 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-29 19:42:15.034 [main] INFO  com.techzen.techlearn.TechlearnApplicationTests - Started TechlearnApplicationTests in 6.3 seconds (process running for 7.778)
+2024-08-29 19:42:15.713 [SpringApplicationShutdownHook] DEBUG org.springframework.web.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@288cdaab, started on Thu Aug 29 19:42:09 ICT 2024
+2024-08-29 19:42:15.718 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'

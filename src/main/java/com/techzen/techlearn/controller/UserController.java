@@ -29,7 +29,7 @@ public class UserController {
                 .status(HttpStatus.OK.value())
                 .code(ErrorCode.GET_SUCCESSFUL.getCode())
                 .message(ErrorCode.GET_SUCCESSFUL.getMessage())
-                .data(userService.getAllUser(page, pageSize))
+                .result(userService.getAllUser(page, pageSize))
                 .build();
     }
 
@@ -39,7 +39,7 @@ public class UserController {
                 .status(HttpStatus.OK.value())
                 .code(ErrorCode.GET_SUCCESSFUL.getCode())
                 .message(ErrorCode.GET_SUCCESSFUL.getMessage())
-                .data(userService.getUserById(id))
+                .result(userService.getUserById(id))
                 .build();
     }
 
@@ -49,7 +49,7 @@ public class UserController {
                 .status(HttpStatus.OK.value())
                 .code(ErrorCode.ADD_SUCCESSFUL.getCode())
                 .message(ErrorCode.ADD_SUCCESSFUL.getMessage())
-                .data(userService.addUser(request))
+                .result(userService.addUser(request))
                 .build();
     }
 
@@ -59,7 +59,7 @@ public class UserController {
                 .status(HttpStatus.OK.value())
                 .code(ErrorCode.UPDATE_SUCCESSFUL.getCode())
                 .message(ErrorCode.UPDATE_SUCCESSFUL.getMessage())
-                .data(userService.updateUser(id, request))
+                .result(userService.updateUser(id, request))
                 .build();
     }
 
