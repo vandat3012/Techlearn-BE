@@ -4,6 +4,8 @@ import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;
 import jakarta.persistence.MappedSuperclass;
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
@@ -22,11 +24,11 @@ public abstract class BaseEntity {
     private String createdBy;
 
     @Column(name="created_date", updatable = false)
-    @CreatedDate
+    @CreationTimestamp
     private LocalDateTime createdDate;
 
     @Column(name="modified_date")
-    @LastModifiedDate
+    @UpdateTimestamp
     private LocalDateTime modifiedDate;
 
     @Column(name="modified_by")

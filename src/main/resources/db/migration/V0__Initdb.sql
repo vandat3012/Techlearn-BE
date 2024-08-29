@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS techlearn;
+
 CREATE TABLE tbl_user
 (
     id            BINARY(16)   NOT NULL,
